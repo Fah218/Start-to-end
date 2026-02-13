@@ -2,102 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Fahad | Personal Portfolio</title>
+    <title>Fahad | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-    <!-- Header Section -->
-    <header>
+<header>
+    <div class="container nav-container">
         <h1>Fahad</h1>
-        <p>Engineering Student | Web Developer | Problem Solver</p>
-
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+</header>
 
-    <!-- Main Content -->
-    <main>
+<main>
 
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
-
-            <img src="/Users/fahadfurquan/Desktop/Dev arena/WEEK 01/images /pexels-hiteshchoudhary-2756843.jpg" alt="Profile picture of Fahad" width="200">
-
-            <p>
-                I am a third-year engineering student with a strong interest in
-                software development and problem solving. I enjoy building web
-                applications and continuously improving my technical skills.
-            </p>
-
-            <p>
-                My focus areas include Data Structures & Algorithms,
-                Web Development, and exploring new technologies.
-            </p>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Skills</h2>
-
-            <h3>Technical Skills</h3>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>C++</li>
-                <li>Git & GitHub</li>
-            </ul>
-
-            <h3>Soft Skills</h3>
-            <ol>
-                <li>Problem Solving</li>
-                <li>Team Collaboration</li>
-                <li>Time Management</li>
-                <li>Communication</li>
-            </ol>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-
-            <form action="#" method="post">
-
-                <label for="name">Full Name:</label><br>
-                <input type="text" id="name" name="name" required minlength="3"><br><br>
-
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5" required minlength="10"></textarea><br><br>
-
-                <button type="submit">Send Message</button>
-
-            </form>
-
-            <h3>Connect With Me</h3>
-            <p>
-                <a href="https://github.com/Fah218" target="_blank">GitHub</a> |
-                <a href="https://www.linkedin.com/in/fahad-furquan-754aa0329/" target="_blank">LinkedIn</a>
-            </p>
-
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Fahad. All Rights Reserved.</p>
-    </footer>
-
-</body>
-</html>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container about-container">
+            <img src="images/profile.jpg" alt="Profile picture of Fahad">
+            <div>
+                <h2>About Me</h2>
+                <p>
+                    I am a third-year engineering student passionate about software
