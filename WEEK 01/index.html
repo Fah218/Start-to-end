@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Fahad | Portfolio</title>
+    <title>Fahad | Interactive Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-    <!-- External CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
     <div class="container nav-container">
-        <h1>Fahad</h1>
+        <h1 id="logo">Fahad</h1>
         <nav>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -23,84 +23,89 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <button id="themeToggle" class="btn small-btn">Dark Mode</button>
     </div>
 </header>
 
 <main>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container about-container">
-            <img src="https://images.pexels.com/photos/7775636/pexels-photo-7775636.jpeg" alt="Profile picture of Fahad">
-            <div>
-                <h2>About Me</h2>
-                <p>
-                    I am a third-year engineering student passionate about software
-                    development and problem solving. I enjoy building web
-                    applications and continuously improving my technical skills.
-                </p>
-                <p>
-                    My focus areas include Data Structures, Web Development,
-                    and modern frontend technologies.
-                </p>
-            </div>
+<!-- ABOUT -->
+<section id="about" class="section">
+    <div class="container about-container">
+        <img src="WEEK 01/images /Fahad pass size img 2.jpeg" alt="Profile picture of Fahad" id="profileImage">
+        <div>
+            <h2>About Me</h2>
+            <p id="aboutText">
+                I am a third-year engineering student passionate about 
+                software development and problem solving.
+            </p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section light-bg">
-        <div class="container">
-            <h2>Skills</h2>
+<!-- SKILLS -->
+<section id="skills" class="section light-bg">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
 
-            <div class="skills-grid">
-                <div class="card">
-                    <h3>Technical Skills</h3>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>C++</li>
-                        <li>Git & GitHub</li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h3>Soft Skills</h3>
-                    <ul>
-                        <li>Problem Solving</li>
-                        <li>Team Collaboration</li>
-                        <li>Time Management</li>
-                        <li>Communication</li>
-                    </ul>
-                </div>
+            <div class="card">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>C++</li>
+                    <li>Git & GitHub</li>
+                </ul>
             </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Me</h2>
-
-            <form class="contact-form">
-                <input type="text" placeholder="Full Name" required minlength="3">
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Your Message" rows="5" required minlength="10"></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-
-            <div class="social-links">
-                <a href="https://github.com/Fah218/Start-to-end" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/fahad-furquan-754aa0329/" target="_blank">LinkedIn</a>
+            <div class="card">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Problem Solving</li>
+                    <li>Team Collaboration</li>
+                    <li>Time Management</li>
+                    <li>Communication</li>
+                </ul>
             </div>
+
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <div class="container">
+        <h2>Contact Me</h2>
+
+        <form id="contactForm" class="contact-form">
+
+            <input type="text" id="name" placeholder="Full Name">
+            <small class="error" id="nameError"></small>
+
+            <input type="email" id="email" placeholder="Email">
+            <small class="error" id="emailError"></small>
+
+            <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+            <small class="error" id="messageError"></small>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <div class="social-links">
+            <a href="https://github.com/Fah218" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/fahad-furquan-754aa0329/" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+</section>
 
 </main>
 
 <footer>
-    <p>© 2026 Fahad. All Rights Reserved.</p>
+    <p id="footerText">© 2026 Fahad. All Rights Reserved.</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

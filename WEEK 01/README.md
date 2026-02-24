@@ -1,45 +1,27 @@
-Day 01 Task>>
+# Interactive Portfolio Website
 
-# Personal Portfolio Website
+This portfolio was built in 3 stages:
 
-This is my personal portfolio website built using HTML5.
+## Week 1 - HTML
+- Semantic structure
+- About, Skills, Contact sections
+- Contact form
+- Internal navigation
 
-## Sections Included:
-- About
-- Skills
-- Contact
-
-## Technologies Used:
-- HTML5
-
-## Folder Structure:
-- index.html
-- images/
-- README.md
-
-## How to Run:
-Open index.html in your browser.
-
-
-Day 02 Task>>
-
-# Styled Portfolio Website
-
-This is a styled personal portfolio website built using HTML and CSS.
-
-## Features:
-- Responsive design
+## Week 2 - CSS
+- External stylesheet
 - Flexbox layout
+- Responsive design
 - Hover effects
-- Custom Google Fonts
-- External CSS file
-- Mobile-friendly layout
+- Custom Google Font
 
-## Folder Structure:
-- index.html
-- style.css
-- images/
-- screenshots/
+## Week 3 - JavaScript
+- Form validation with error messages
+- Dark mode toggle
+- Image zoom effect
+- Dynamic footer year
+- DOM manipulation & event listeners
+- LocalStorage support
 
-## How to Run:
+## Run Project
 Open index.html in your browser.
